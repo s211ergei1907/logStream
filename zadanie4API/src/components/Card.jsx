@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export const Card = ({ title, body, userId }) => {
   return (
     <div className="wrapper">
       <div className="card">
         <div className="headerCard">
-          <h3>Пост создал:</h3>
+          <Link to={`/Data`}>Your Name</Link>
           <p>{userId}</p>
         </div>
         <div className="bodyCard">
